@@ -3,6 +3,7 @@ const source    = require('vinyl-source-stream')
 const streamify = require('gulp-streamify')
 const uglify    = require('gulp-uglify')
 const babel     = require('gulp-babel')
+const rename    = require('gulp-rename')
 
 gulp.task('transpile', () => {
   return gulp.src('./src/**/*.js')
@@ -12,6 +13,15 @@ gulp.task('transpile', () => {
     .pipe(gulp.dest('./dist'));
 });
 
-gulp.task('build', ['transpile'], () => {
-  gulp.watch('./src/**/*.js', ['transpile'])
+gulp.task('make index', () => {
+  return gulp.src('./index.babel.js')
+    .pipe(babel({
+      presets: ['es2015']
+    }))
+    .pipe(rename('index.js'))
+    .pipe(gulp.dest('./'));
+});
+
+gulp.task('build', ['transpile', 'make index'], () => {
+  gulp.watch('./src/**/*.js', ['transpile', 'make index'])
 })

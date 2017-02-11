@@ -4,7 +4,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _map = require('./Array/map');
+var _map = require('./dist/Array/map');
 
 Object.defineProperty(exports, 'map', {
   enumerable: true,
@@ -13,7 +13,7 @@ Object.defineProperty(exports, 'map', {
   }
 });
 
-var _filter = require('./Array/filter');
+var _filter = require('./dist/Array/filter');
 
 Object.defineProperty(exports, 'filter', {
   enumerable: true,
@@ -22,7 +22,7 @@ Object.defineProperty(exports, 'filter', {
   }
 });
 
-var _each = require('./Array/each');
+var _each = require('./dist/Array/each');
 
 Object.defineProperty(exports, 'each', {
   enumerable: true,

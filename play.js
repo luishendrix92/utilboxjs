@@ -1,7 +1,7 @@
-let _ = require('./dist/index')
+let _ = require('./index')
 
 console.log(
-  _.filter(
+  _.map(
     [null, null, 5, false, 7, []],
     Boolean
   )

@@ -35,6 +35,7 @@
     "eslint": "^3.11.1",
     "gulp": "^3.9.1",
     "gulp-babel": "^6.1.2",
+    "gulp-rename": "^1.2.2",
     "gulp-streamify": "^1.0.2",
     "gulp-uglify": "^2.0.0",
     "streamify": "^0.2.6",
