@@ -1,0 +1,44 @@
+{
+  "name": "utilboxjs",
+  "version": "0.0.1",
+  "description": "Yet another helper function library with a complete set of utilities and data structures.",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --reporter spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/luishendrix92/utilboxjs.git"
+  },
+  "keywords": [
+    "helpers",
+    "utilities",
+    "module",
+    "struct",
+    "extensions",
+    "functions"
+  ],
+  "engines": {
+    "node": ">=4.0.0"
+  },
+  "author": "Luis Felipe López Garay <hello@codetuts.tech> (https://codetuts.tech)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/luishendrix92/utilboxjs/issues"
+  },
+  "homepage": "https://github.com/luishendrix92/utilboxjs#readme",
+  "devDependencies": {
+    "babel-cli": "^6.18.0",
+    "babel-eslint": "^7.1.1",
+    "babel-preset-es2015": "^6.18.0",
+    "babel-preset-stage-0": "^6.16.0",
+    "eslint": "^3.11.1",
+    "gulp": "^3.9.1",
+    "gulp-babel": "^6.1.2",
+    "gulp-streamify": "^1.0.2",
+    "gulp-uglify": "^2.0.0",
+    "streamify": "^0.2.6",
+    "var": "^0.2.0",
+    "vinyl-source-stream": "^1.1.0"
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "parser": "babel-eslint",
+  "parserOptions": {
+    "ecmaVersion": 8,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "experimentalObjectRestSpread": true
+    }
+  },
+  "env": {
+    "node": true,
+    "commonjs": true
+  },
+  "rules": {
+    "semi": 0,
+    "no-debugger": 1,
+    "no-dupe-args": 2,
+    "no-dupe-keys": 2,
+    "no-duplicate-case": 2,
+    "no-empty-character-class": 2,
+    "no-sparse-arrays": 1,
+    "no-unreachable": 2,
+    "use-isnan": 1,
+    "valid-typeof": 2,
+    "no-template-curly-in-string": 1,
+    "array-callback-return": 1,
+    "block-scoped-var": 0,
+    "eqeqeq": 2,
+    "no-empty-pattern": 1,
+    "no-eval": 2,
+    "no-implied-eval": 1,
+    "no-loop-func": 1,
+    "no-return-assign": 1,
+    "no-return-await": 1,
+    "no-sequences": 2,
+    "no-self-compare": 2,
+    "no-with": 2,
+    "radix": 1,
+    "require-await": 1,
+    "wrap-iife": 1,
+    "no-use-before-define": 0,
+    "no-undef": 2,
+    "brace-style": 1,
+    "comma-style": 1,
+    "func-call-spacing": 1,
+    "indent": [1, 2],
+    "new-cap": 1,
+    "newline-before-return": 1,
+    "quotes": [1, "single"],
+    "object-curly-spacing": [1, "always"],
+    "no-whitespace-before-property": 1,
+    "arrow-spacing": 1,
+    "constructor-super": 2,
+    "generator-star-spacing": [1, "after"],
+    "require-yield": 2,
+    "no-const-assign": 2,
+    "no-duplicate-imports": 1,
+    "rest-spread-spacing": 2
+  }
+}
