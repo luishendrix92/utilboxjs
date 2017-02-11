@@ -4,31 +4,26 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _map = require('./dist/Array/map');
+var _index = require('./dist/Array/index');
 
-Object.defineProperty(exports, 'map', {
-  enumerable: true,
-  get: function get() {
-    return _interopRequireDefault(_map).default;
-  }
+Object.keys(_index).forEach(function (key) {
+  if (key === "default" || key === "__esModule") return;
+  Object.defineProperty(exports, key, {
+    enumerable: true,
+    get: function get() {
+      return _index[key];
+    }
+  });
 });
 
-var _filter = require('./dist/Array/filter');
+var _index2 = require('./dist/String/index');
 
-Object.defineProperty(exports, 'filter', {
-  enumerable: true,
-  get: function get() {
-    return _interopRequireDefault(_filter).default;
-  }
+Object.keys(_index2).forEach(function (key) {
+  if (key === "default" || key === "__esModule") return;
+  Object.defineProperty(exports, key, {
+    enumerable: true,
+    get: function get() {
+      return _index2[key];
+    }
+  });
 });
-
-var _each = require('./dist/Array/each');
-
-Object.defineProperty(exports, 'each', {
-  enumerable: true,
-  get: function get() {
-    return _interopRequireDefault(_each).default;
-  }
-});
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }

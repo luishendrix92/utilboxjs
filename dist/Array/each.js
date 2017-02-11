@@ -1,9 +1,5 @@
 "use strict";
 
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = each;
 /**
  * Iterates over the given list with an side-effect
  * @param { array } list
@@ -11,7 +7,7 @@ exports.default = each;
  * @return { array }
  */
 
-function each(list, action) {
+module.exports = function each(list, action) {
   var length = list.length;
   var index = 0;
 
@@ -22,4 +18,4 @@ function each(list, action) {
   }
 
   return list;
-}
+};

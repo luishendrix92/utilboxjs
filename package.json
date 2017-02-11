@@ -4,7 +4,7 @@
   "description": "Yet another helper function library with a complete set of utilities and data structures.",
   "main": "index.js",
   "scripts": {
-    "test": "mocha --reporter spec"
+    "test": "jest"
   },
   "repository": {
     "type": "git",
@@ -38,6 +38,8 @@
     "gulp-rename": "^1.2.2",
     "gulp-streamify": "^1.0.2",
     "gulp-uglify": "^2.0.0",
+    "jest": "^18.1.0",
+    "jest-cli": "^18.1.0",
     "streamify": "^0.2.6",
     "var": "^0.2.0",
     "vinyl-source-stream": "^1.1.0"

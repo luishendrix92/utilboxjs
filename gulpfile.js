@@ -23,5 +23,6 @@ gulp.task('make index', () => {
 });
 
 gulp.task('build', ['transpile', 'make index'], () => {
-  gulp.watch('./src/**/*.js', ['transpile', 'make index'])
+  gulp.watch('./src/**/*.js', ['transpile'])
+  gulp.watch('./index.babel.js', ['make index'])
 })

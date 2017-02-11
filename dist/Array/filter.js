@@ -1,9 +1,5 @@
 "use strict";
 
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = filter;
 /**
  * Creates a new list that contains items from the given list
  * that meet a certain criteria specified as a callback function.
@@ -11,8 +7,7 @@ exports.default = filter;
  * @param { function } spec
  * @return { array }
  */
-
-function filter(list, spec) {
+module.exports = function filter(list, spec) {
   var length = list.length;
   var filtered = [];
   var index = 0;
@@ -30,4 +25,4 @@ function filter(list, spec) {
   }
 
   return filtered;
-}
+};
