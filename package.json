@@ -1,6 +1,6 @@
 {
   "name": "utilboxjs",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Yet another helper function library with a complete set of utilities and data structures.",
   "main": "index.js",
   "scripts": {
