@@ -1,8 +1,8 @@
-//import uglify from 'rollup-plugin-uglify'
+// import uglify from 'rollup-plugin-uglify'
 
 export default {
   entry: './index.js',
-  dest: './lib/utilbox.cjs.js',
+  dest: './lib/utilbox.js',
   format: 'cjs',
   //moduleName: 'Ub',
   /*plugins: [

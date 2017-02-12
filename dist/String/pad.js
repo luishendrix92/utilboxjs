@@ -1,16 +1,26 @@
+import { repeat } from './repeat';
+
 /**
  * Typical string padding from the length and the right up to
  * a certain character limit, filling with a certain char.
  * @param { string } str
  * @param { int } max
- * @param { int } from [optional, with default]
- * @param { int } fill [optional, with default]
+ * @param { string } fill [optional, with default]
  * @return { string }
  */
 
-export function pad(str, max) {
-  var from = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : 'left';
-  var fill = arguments.length > 3 && arguments[3] !== undefined ? arguments[3] : ' ';
+export function padStart(str, max) {
+  var fill = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : ' ';
 
-  return 'void';
+  var strLen = str.length;
+
+  return repeat(fill, Math.ceil((max - strLen) / fill.length)).slice(0, max - strLen) + str;
+}
+
+export function padEnd(str, max) {
+  var fill = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : ' ';
+
+  var strLen = str.length;
+
+  return str + repeat(fill, Math.ceil((max - strLen) / fill.length)).slice(0, max - strLen);
 }
