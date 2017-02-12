@@ -1,15 +1,12 @@
 language: node_js
-
 node_js:
-  - stable
-
+- stable
 install:
-  - npm install
-
+- npm install
 script:
-  - npm test
-  
+- npm test
 deploy:
   provider: npm
-  api_key: "fd0b3a48-002f-468b-a90f-8bd9f98a4989"
-  email: "hello@codetuts.tech"
+  api_key:
+    secure: bHOfDQpZzpYnN7hU39ruuojCsXCotd1IHOdg8EzxWcdd9W8QpBB+uB/gUNGoVp9GKD42q7EJkT0JK68nzL0WGQebfJblVszl7iq8tN2a9nOMJkJL3Y+ACwr/pm44qmjF4BzFVtzkE1qYiJCSuSAWa3JZ0Q1KObz4rvGcrmeQ46ngR2nSd6vL3Z65uCev26OgeWhOV7IDn9SNW58JtLgOpebDvAq4WLwbYSmlHTShsIOFQAPbIxfQF1ZtD/b9Am1RnSuGyPAM9ny9kmncfDHZTEOR8q8h19jc5+hPUiP2cvf501CrQlDqHB2pgVbniE3oCZli7VrBitl0bEUEI+56IMMSVcspp/JTOQAE9Jk+VaVr8GhGLYU6cStp8dX9zxScEwbljMB7X/VGSuzCi4xzF4dysounQh3m1Y116iCGyQHVlQu2wy+/BkBZULWu4VIWELS5c0YdqfDk0TSjU5ILwjpktyRYZHadFuQs/1eBpan/nbGhH8A3RTCnDLDMte6fJAjlwGGlRTwSWKcngzy3pbtQM5cThDumt54xV7pkI0edxLDMozkyhi1eBOSxIG8exp5R4aArokTyxYaDKGY6wEhl5WXM4WjKIon9DpSaWDhD/AyHHLfbBi1pGjHh7N42WN9HA09iebp/4jeWiHGmkugokU0WHoyxjJwUdMbttiA=
+  email: hello@codetuts.tech
