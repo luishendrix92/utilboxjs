@@ -6,7 +6,7 @@
  * @return { array }
  */
  
-module.exports = function map(list, transform) {
+export function map(list, transform) {
   let length = list.length
   let transformed = Array(length)
   let index = 0

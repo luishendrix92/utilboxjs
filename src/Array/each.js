@@ -5,7 +5,7 @@
  * @return { array }
  */
  
-module.exports = function each(list, action) {
+export function each(list, action) {
   let length = list.length
   let index = 0
   

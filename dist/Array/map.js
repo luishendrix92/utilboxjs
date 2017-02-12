@@ -1,5 +1,3 @@
-"use strict";
-
 /**
  * Transforms an array into a new array after transforming the
  * elements inside it with a callback function.
@@ -8,7 +6,7 @@
  * @return { array }
  */
 
-module.exports = function map(list, transform) {
+export function map(list, transform) {
   var length = list.length;
   var transformed = Array(length);
   var index = 0;
@@ -21,4 +19,4 @@ module.exports = function map(list, transform) {
   }
 
   return transformed;
-};
+}

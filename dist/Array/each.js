@@ -1,5 +1,3 @@
-"use strict";
-
 /**
  * Iterates over the given list with an side-effect
  * @param { array } list
@@ -7,7 +5,7 @@
  * @return { array }
  */
 
-module.exports = function each(list, action) {
+export function each(list, action) {
   var length = list.length;
   var index = 0;
 
@@ -18,4 +16,4 @@ module.exports = function each(list, action) {
   }
 
   return list;
-};
+}

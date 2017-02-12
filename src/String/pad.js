@@ -8,6 +8,6 @@
  * @return { string }
  */
 
-module.exports = function pad(str, max, from = 'left', fill = ' ') {
+export function pad(str, max, from = 'left', fill = ' ') {
   return 'void'
 }

@@ -5,7 +5,7 @@
  * @param { function } spec
  * @return { array }
  */
-module.exports = function filter(list, spec) {
+export function filter(list, spec) {
   let length = list.length
   let filtered = []
   let index = 0

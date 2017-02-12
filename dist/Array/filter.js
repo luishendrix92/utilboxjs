@@ -1,5 +1,3 @@
-"use strict";
-
 /**
  * Creates a new list that contains items from the given list
  * that meet a certain criteria specified as a callback function.
@@ -7,7 +5,7 @@
  * @param { function } spec
  * @return { array }
  */
-module.exports = function filter(list, spec) {
+export function filter(list, spec) {
   var length = list.length;
   var filtered = [];
   var index = 0;
@@ -25,4 +23,4 @@ module.exports = function filter(list, spec) {
   }
 
   return filtered;
-};
+}

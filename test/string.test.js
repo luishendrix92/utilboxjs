@@ -1,4 +1,4 @@
-const _ = require('../dist/String/index')
+const _ = require('../lib/utilbox.cjs.js')
 
 test('Pad from the left', () => {
   let paddedLeft = _.pad()

@@ -5,24 +5,26 @@ const uglify    = require('gulp-uglify')
 const babel     = require('gulp-babel')
 const rename    = require('gulp-rename')
 
-gulp.task('transpile', () => {
+gulp.task('transpile-modules', () => {
   return gulp.src('./src/**/*.js')
     .pipe(babel({
-      presets: ['es2015', 'stage-0']
+      presets: [['es2015', { 'modules': false }], 'stage-0']
     }))
     .pipe(gulp.dest('./dist'));
 });
 
-gulp.task('make index', () => {
-  return gulp.src('./index.babel.js')
+gulp.task('transpile-tests', () => {
+  return gulp.src('./test/es6/*.js')
     .pipe(babel({
-      presets: ['es2015']
+      presets: ['es2015', 'stage-0']
     }))
-    .pipe(rename('index.js'))
-    .pipe(gulp.dest('./'));
+    .pipe(rename({
+      suffix: '.test'
+    }))
+    .pipe(gulp.dest('./test'));
 });
 
-gulp.task('build', ['transpile', 'make index'], () => {
-  gulp.watch('./src/**/*.js', ['transpile'])
-  gulp.watch('./index.babel.js', ['make index'])
+gulp.task('build', ['transpile-modules', 'transpile-tests'], () => {
+  gulp.watch('./src/**/*.js', ['transpile-modules'])
+  gulp.watch('./test/es6/*.js', ['transpile-tests'])
 })

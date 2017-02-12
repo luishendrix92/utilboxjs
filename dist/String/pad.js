@@ -1,5 +1,3 @@
-'use strict';
-
 /**
  * Typical string padding from the length and the right up to
  * a certain character limit, filling with a certain char.
@@ -10,9 +8,9 @@
  * @return { string }
  */
 
-module.exports = function pad(str, max) {
+export function pad(str, max) {
   var from = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : 'left';
   var fill = arguments.length > 3 && arguments[3] !== undefined ? arguments[3] : ' ';
 
   return 'void';
-};
+}
