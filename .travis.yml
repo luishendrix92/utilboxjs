@@ -8,4 +8,7 @@ install:
 
 script:
   - npm test
-  - npm publish
+  
+deploy:
+  provider: npm
+  api_key: "fd0b3a48-002f-468b-a90f-8bd9f98a4989"
