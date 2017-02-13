@@ -10,7 +10,7 @@ export function repeat(str, repeats = 1, repeated = '') {
   if (!repeats
       || typeof repeats !== 'number'
       || repeats < 0) return repeated
-  
+
   return repeat(str, repeats - 1, repeated + str)
 }
 
@@ -27,7 +27,7 @@ export function repeat(str, repeats = 1, repeated = '') {
 export function padStart(str, max, fill = ' ') {
   let strLen = str.length
   if (max < strLen) return str
-  
+
   return repeat(fill, Math.ceil((max - strLen) / fill.length))
     .slice(0, max - strLen) + str
 }
@@ -35,7 +35,25 @@ export function padStart(str, max, fill = ' ') {
 export function padEnd(str, max, fill = ' ') {
   let strLen = str.length
   if (max < strLen) return str
-  
+
   return str + repeat(fill, Math.ceil((max - strLen) / fill.length))
     .slice(0, max - strLen)
+}
+
+/**
+ * Reverses a string.
+ * @param { string } str
+ * @return { string }
+ */
+
+export function reverse(str){
+  // TODO : check this later, for variable type
+  // if(typeof str !== 'string') throw new Error(`"${str}" is not a String.`)
+  let i = str.length - 1
+  let newStr = ''
+  for( ; i >= 0; i--){
+    newStr += str[i]
+  }
+
+  return newStr
 }
