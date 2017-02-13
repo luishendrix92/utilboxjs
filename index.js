@@ -21,14 +21,9 @@
  * SOFTWARE.
  */
 
-export { each } from './dist/Array/each'
-export { filter } from './dist/Array/filter'
-export { map } from './dist/Array/map'
-export { range } from './dist/Array/range'
-//export { sortTuple } from './dist/Array/sort'
-
-export { padStart, padEnd } from './dist/String/pad'
-export { repeat } from './dist/String/repeat'
-
-export { inRange } from './dist/Math/in_range'
-export { scale } from './dist/Math/scale'
+export * from './dist/Array/index'
+export * from './dist/APIs/index'
+export * from './dist/Math/index'
+export * from './dist/Object/index'
+export * from './dist/String/index'
+export * from './dist/Structs/index'

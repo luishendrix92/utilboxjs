@@ -16,10 +16,7 @@ test('[filter] Filters a list with a function spec', () => {
 test('[each] Iterates over a collection with side-effects', () => {
   let outer = 0
   
-  _.each([1, 2, 3], (n) => {
-    outer += n
-  })
-  
+  _.each([1, 2, 3], (n) => { outer += n })
   expect(outer).toBe(6)
 });
 

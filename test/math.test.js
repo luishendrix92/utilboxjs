@@ -9,6 +9,6 @@ test('[inRange] Determines open or closed range inclusion of N', () => {
 })
 
 test('[scale] Pinpoints a number in interval A inside an interval B', () => {
-  expect(_.scale(1, 10, 0.4, 0.8, 0.5)).toBe(3.25)
+  expect(_.scale(1, 10, 0.4, 0.8, 0.5)).toBeCloseTo(3.25)
   expect(_.scale(-2, 2, 0, 100, 50)).toBe(0)
 })

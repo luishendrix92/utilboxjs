@@ -3,8 +3,8 @@
 export default {
   entry: './index.js',
   dest: './lib/utilbox.js',
-  format: 'cjs',
-  //moduleName: 'Ub',
+  format: 'umd',
+  moduleName: 'Ub',
   /*plugins: [
     uglify({
       output: {
