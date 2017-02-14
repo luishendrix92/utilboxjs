@@ -24,3 +24,11 @@ describe('String padding', () => {
     expect(_.padEnd('sixchar', 6, '*')).toBe('sixchar')
   })
 })
+
+test('[reverse] Takes a string and reverses it', () => {
+  expect(_.reverse([1, 2, 3])).toEqual([1, 2, 3])
+  expect(_.reverse('h')).toBe('h')
+  expect(_.reverse('')).toBe('')
+  expect(_.reverse('12')).toBe('21')
+  expect(_.reverse('The quick brown fox')).toBe('xof nworb kciuq ehT')
+})

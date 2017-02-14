@@ -1,0 +1,2 @@
+export const MAX_INT = 9007199254740991
+export const SAFE_CALLSTACK = 11034
