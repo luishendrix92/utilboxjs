@@ -22,7 +22,7 @@ gulp.task('bundle', () => {
       entry: './index.js',
       allowRealFiles: true,
       format: 'iife',
-      moduleName: 'Ub',
+      moduleName: 'B',
       plugins: [
         uglify({
           output: {
@@ -45,7 +45,7 @@ gulp.task('bundle', () => {
       entry: './index.js',
       allowRealFiles: true,
       format: 'umd',
-      moduleName: 'Ub'
+      moduleName: 'B'
     }))
     .pipe(rename('utilbox.js'))
     .pipe(gulp.dest('./lib'))
@@ -56,7 +56,7 @@ gulp.task('sub-bundles', () => {
     entry: `./dist/${subMod}/index.js`,
     allowRealFiles: true,
     format: 'umd',
-    moduleName: 'Ub'
+    moduleName: 'B'
   })
   const subModules = [
     //'APIs',
@@ -71,7 +71,7 @@ gulp.task('sub-bundles', () => {
   for (let subMod of subModules) {
     gulp.src(`./dist/${subMod}/index.js`)
       .pipe(rollup(rollupConfig(subMod)))
-      .pipe(rename(`${subMod}.js`))
+      .pipe(rename(`utilbox-${subMod.toLowerCase()}.js`))
       .pipe(gulp.dest('./lib'))
   }
 })
