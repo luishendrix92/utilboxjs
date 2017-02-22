@@ -1,2 +1,0 @@
-export var MAX_INT = 9007199254740991;
-export var SAFE_CALLSTACK = 11034;
