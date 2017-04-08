@@ -29,7 +29,8 @@ test('[range] Assembles an array from a to b with integers', () => {
 })
 
 describe('Reducing', () => {
-  let emptyReduce  = _.reduce([], (a, b) => a + b)
+  let emptyReduce  = _.reduce([], (a, b) => a + b, 'TurboMan')
+  let emptyReduce2 = _.reduce([], (a, b) => a + b)
   let oneItemCase1 = _.reduce(
     ['hey'],
     (acc, item) => `${acc} ${item}! What's going on??!!`,
@@ -54,8 +55,12 @@ describe('Reducing', () => {
     expect(valuesObtained).toEqual(['bar', 'qux', 'quuz', 'grault'])
   })
   
-  test('[reduce] Must return an NULL when an empty list is provided', () => {
-    expect(emptyReduce).toEqual(null)
+  test('[reduce] Must return the accumulator when the list is empty', () => {
+    expect(emptyReduce).toEqual('TurboMan')
+  })
+  
+  test('[reduce] Null when the list is empty and no accumulator', () => {
+    expect(emptyReduce2).toBeNull()
   })
   
   test('[reduce] Should handle cases where only one item exists', () => {

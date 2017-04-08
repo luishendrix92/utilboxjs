@@ -1,3 +1,5 @@
+import { reduce } from '../Array/reduce'
+
 /**
  * Sends a value through a series of functions in the given order and
  * returns the result of this pipeline to the caller. This acts like
@@ -14,7 +16,7 @@
  */
 
 export function pipe(x, ...funcs) {
-  return funcs.reduce((result, func) => {
+  return reduce(funcs, (result, func) => {
     return func(result)
   }, x)
 }

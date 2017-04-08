@@ -12,3 +12,9 @@ test('[scale] Pinpoints a number in interval A inside an interval B', () => {
   expect(_.scale(1, 10, 0.4, 0.8, 0.5)).toBeCloseTo(3.25)
   expect(_.scale(-2, 2, 0, 100, 50)).toBe(0)
 })
+
+test('[distance] Computes the distance between two points', () => {
+  expect(_.distance([-4, -3], [2, 5])).toBeCloseTo(10)
+  expect(_.distance(-4, -3, 2, 5)).toBeCloseTo(10)
+  expect(_.distance([25, 80], [50, 45])).toBeCloseTo(43.0116263)
+})

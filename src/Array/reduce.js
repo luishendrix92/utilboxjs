@@ -13,7 +13,7 @@
 export function reduce(list, reducer, acc) {
   let { length } = list
 
-  if (!length) return null
+  if (!length) return (acc || null)
   
   let result = acc !== undefined? acc : list[0]
   let i = acc !== undefined? 0 : 1
