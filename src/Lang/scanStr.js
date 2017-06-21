@@ -1,16 +1,9 @@
 /**
- * In other programming languages, there's a RegExp method called 'scan'
- * that behaves like RegExp.match() but it plays nicely with capture
- * groups. Using RegExp.exec() behind the scenes with a global safeguard.
- *
- * NOTE: This function needs a global RegExp flag, and adds it if absent.
- *
- * @param str     :: String
- * @param pattern :: RegExp
- *
- * @return        :: [[String]]
+ * Behaves like RegExp.match() but it plays nicely with capture groups, using RegExp.exec() behind the scenes with a global safeguard. UNSTABLE.
+ * @param { string } str
+ * @param { RegExp } pattern
+ * @return { [[string]] }
  */
-
 export function scanStr(str, pattern) {
   let result = []
   let match

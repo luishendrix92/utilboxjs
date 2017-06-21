@@ -4,7 +4,17 @@ const rename    = require('gulp-rename')
 const babel     = require('rollup-plugin-babel')
 const uglify    = require('rollup-plugin-uglify')
 const babelConf = {
-  presets: ['es2015-rollup', 'stage-0']
+  'presets': [
+    [
+      'es2015',
+      {
+        'modules': false
+      }
+    ]
+  ],
+  'plugins': [
+    'external-helpers'
+  ]
 }
 const uglifyConf = {
   output: {
@@ -51,11 +61,13 @@ gulp.task('sub-bundles', () => {
     plugins: [babel(babelConf)]
   })
   const subModules = [
-    'Lang',
-    'Array',
     'Function',
+    'Lang',
+    'List',
     'Math',
+    'Matrix',
     'Object',
+    'Set',
     'String',
     'Structs'
   ]

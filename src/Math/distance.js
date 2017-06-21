@@ -1,21 +1,19 @@
-/*
- * Distance between two points (x, y) using the pythagorean theorem
- *
- * @param a :: Point :: [float, float]
- * @param b :: Point :: [float, float]
- *
- * @return float
+/**
+ * Distance between two points (x, y) using the pythagorean theorem. Beware floating point precision.
+ * @param { [number] } p1
+ * @param  { [number] } p2
+ * @return { number }
  */
- 
-export function distance(a, b) {  
+export function distance(p1, p2) {  
   if (arguments.length === 4) {
-    [a, b] = [
+    [p1, p2] = [
       [arguments[0], arguments[1]],
       [arguments[2], arguments[3]]
     ]
   }
   
   return Math.sqrt(
-    (b[0] - a[0]) ** 2 +
-    (b[1] - a[1]) ** 2)
+    Math.pow(p2[0] - p1[0], 2) +
+    Math.pow(p2[1] - p1[1], 2)
+  )
 }

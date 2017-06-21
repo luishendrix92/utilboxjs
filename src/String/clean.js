@@ -1,0 +1,1 @@
+// Trim extra whitespace on all ends

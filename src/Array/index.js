@@ -1,6 +1,0 @@
-export * from './each'
-export * from './filter'
-export * from './map'
-export * from './range'
-export * from './reduce'
-export * from './listComp'

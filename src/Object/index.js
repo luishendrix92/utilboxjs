@@ -1,1 +1,5 @@
+export * from './invert'
+export * from './keyvals'
+export * from './mapObj'
+export * from './matcher'
 export * from './pairs'

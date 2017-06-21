@@ -1,16 +1,12 @@
 import { SAFE_CALLSTACK } from '../constants'
 
 /**
- * Repeat a string n times recursively and then returns the result.
- * Notice that this function is of recursive nature.
- *
- * @param str      :: String
- * @param repeats  :: Int    [default -> 1]
- * @param repeated :: String [default -> '']
- *
- * @return         :: String
+ * Recursively repeats a string N times. It may blow up your callstack if no tail-call optimization is avaiable in the JavaScript engine.
+ * @param { string } str
+ * @param { number } repeats 
+ * @param { string } repeated
+ * @return { string }
  */
-
 export function repeat(str, repeats = 1, repeated = '') {
   if (!repeats
       || typeof repeats !== 'number'

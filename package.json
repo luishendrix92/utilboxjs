@@ -1,7 +1,7 @@
 {
   "name": "utilboxjs",
-  "version": "0.1.5",
-  "description": "Simple library with a complete set of helper functions and structures.",
+  "version": "0.1.6",
+  "description": "Simple library with a complete set of helper utility functions and structures that may not appear in other libraries",
   "main": "index.js",
   "scripts": {
     "test": "jest"
@@ -30,8 +30,8 @@
   "devDependencies": {
     "babel-cli": "^6.18.0",
     "babel-eslint": "^7.1.1",
-    "babel-preset-es2015-rollup": "^3.0.0",
-    "babel-preset-stage-0": "^6.16.0",
+    "babel-plugin-external-helpers": "^6.22.0",
+    "babel-preset-es2015": "^6.24.1",
     "eslint": "^3.11.1",
     "gulp": "^3.9.1",
     "gulp-babel": "^6.1.2",

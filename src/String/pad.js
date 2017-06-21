@@ -1,16 +1,12 @@
 import { repeat } from './repeat'
 
 /**
- * Typical string padding from the length and the right up to
- * a certain character limit, filling with a certain char.
- *
- * @param  str  :: String
- * @param  max  :: Int
- * @param  fill :: String [default -> ' ']
- *
- * @return      :: String
+ * Typical left padding from the length up to a certain character limit, filling with a certain char.
+ * @param { string } str
+ * @param { number } max
+ * @param { string } fill
+ * @return { string }
  */
-
 export function padStart(str, max, fill = ' ') {
   let strLen = str.length
   
@@ -20,6 +16,13 @@ export function padStart(str, max, fill = ' ') {
     .slice(0, max - strLen) + str
 }
 
+/**
+ * Typical right padding from the length up to a certain character limit, filling with a certain char.
+ * @param { string } str
+ * @param { number } max
+ * @param { string } fill
+ * @return { string }
+ */
 export function padEnd(str, max, fill = ' ') {
   let strLen = str.length
   

@@ -1,0 +1,1 @@
+// String template %i and %(varname) with object

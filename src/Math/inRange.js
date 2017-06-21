@@ -1,30 +1,26 @@
 /**
- * Tells you whether 'n' is inside an open or closed interval range
- *
- * @param n       :: Float
- * @param a       :: Float
- * @param b       :: Float
- * @param lClosed :: Boolean [default -> true]
- * @param rClosed :: Boolean [default -> true]
- 
- * @return        :: Boolean
+ * Tells you whether a number is inside an open or closed interval range.
+ * @param { number } n
+ * @param { number } a
+ * @param { number } b
+ * @param { boolean } lClosed
+ * @param { boolean } rClosed
+ * @return { boolean }
  */
-
 export function inRange(n, a, b, lClosed = true, rClosed = true) {
   let temp = a
   a = a > b? b : a
   b = temp > b? temp : b
   
-  return do {
-    if (lClosed && rClosed)
-      n >= a && n <= b
-    else if (!lClosed && rClosed)
-      n > a && n <= b
-    else if (lClosed && !rClosed)
-      n >= a && n < b
-    else if (!lClosed && !rClosed)
-      n > a && n < b
-    else
-      false
+  if (lClosed && rClosed) {
+    return n >= a && n <= b
+  } else if (!lClosed && rClosed) {
+    return n > a && n <= b
+  } else if (lClosed && !rClosed) {
+    return n >= a && n < b
+  } else if (!lClosed && !rClosed) {
+    return n > a && n < b
+  } else {
+    return false
   }
 }

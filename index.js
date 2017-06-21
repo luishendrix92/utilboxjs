@@ -6,9 +6,11 @@
  */
 
 export * from './src/Lang/index'
-export * from './src/Array/index'
+export * from './src/List/index'
 export * from './src/Function/index'
 export * from './src/Math/index'
 export * from './src/Object/index'
 export * from './src/String/index'
 export * from './src/Structs/index'
+export * from './src/Set/index'
+export * from './src/Matrix/index'

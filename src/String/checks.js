@@ -1,0 +1,1 @@
+// implement: isAphaNum, isAlpha, isWhitespace

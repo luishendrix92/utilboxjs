@@ -1,22 +1,15 @@
-/*
- * You give it two values that need to be in constant alternation and
- * returns a function that, when executed (no parameters), returns
- * either of the two values that you passed, like a switch, ON, OFF.
- *
- * @param left  :: Object|Primitive
- * @param right :: Object|Primitive
- *
- * @return      :: Function
+/**
+ * You give it two values that need to be in constant alternation and returns a function that, when executed, returns either values.
+ * @param { * } left
+ * @param { * } right
+ * @return { function }
  */
- 
 export function toggler(left, right = left) {
-  let side = 1 // 0 is left (false) and 1 is right (true)
-  
+  let side = true
+
   return function() {
     side = !side
-    
-    return side
-      ? right
-      : left
+
+    return side ? right : left
   }
 }

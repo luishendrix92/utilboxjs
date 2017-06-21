@@ -1,0 +1,1 @@
+// Implement toCamel, toSnake, toKebab, toPascal
